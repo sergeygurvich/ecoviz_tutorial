@@ -44,5 +44,8 @@ _Documentation: https://docs.nationalresearchplatform.org/userdocs/jupyter/jupyt
 ### 6. Setup port forwarding to access Jupyter Lab from local browser:
 `kubectl port-forward sergey-clip 8888:8888`
 
+### 7. Access the Jupyter Hub link from the logs using your local browser
+http://127.0.0.1:8888/lab/tree/EcoViz_CLIP/EcoViz_CLIP_model.ipynb
+
 ### 7. Tear down:
 `kubectl delete -f  EcoViz_CLIP.yaml`
