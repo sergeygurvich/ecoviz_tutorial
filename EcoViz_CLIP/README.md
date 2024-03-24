@@ -1,9 +1,13 @@
 # CLIP: From Local to Nautilus Tutorial
 
 ## Setup:
+Docker:
 1. Install Docker (https://docs.docker.com/engine/install/)
-2. Install kubectl (https://kubernetes.io/docs/tasks/tools/)
-3. Create DockerHub account (https://hub.docker.com)
+2. Create DockerHub account (https://hub.docker.com)
+
+Kubernetes:
+1. Install kubectl (https://docs.nationalresearchplatform.org/userdocs/start/quickstart/)
+2. Request/use namespace in Nautilus for your project (https://docs.nationalresearchplatform.org/userdocs/start/get-access/)
 
 ## Start building docker image locally:
 
