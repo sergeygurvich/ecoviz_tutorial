@@ -14,7 +14,7 @@
 `docker build . -f Dockerfile_full -t segurvich/ecoviz_clip --platform=linux/amd64`
 
 ### 2. Test the image locally:
-`docker run -d -p 8888:8888 segurvich/ecoviz_clip`
+`docker run -p 8888:8888 segurvich/ecoviz_clip`
 
 ### 3. Push the image to DockerHub (need to have account)
 `docker push segurvich/ecoviz_clip`
