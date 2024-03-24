@@ -8,9 +8,9 @@
 ## Start building docker image locally:
 
 ### 1. Build the image using Dockerfile
-- Empty image:
+- Empty image (only Jupyter is installed):
 `docker build . -f Dockerfile_minimal -t segurvich/ecoviz_clip --platform=linux/amd64`
-- Full image:
+- Full image (git repo cloned, all libraries installed):
 `docker build . -f Dockerfile_full -t segurvich/ecoviz_clip --platform=linux/amd64`
 
 ### 2. Test the image locally:
