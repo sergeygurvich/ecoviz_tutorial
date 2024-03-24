@@ -1,5 +1,6 @@
+# Use an official Jupyter image as a parent image
+# More info: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html
 FROM quay.io/jupyter/minimal-notebook:latest
-LABEL authors="sergeygurvich"
 
 # Install dependencies
 RUN pip install matplotlib pandas transformers torch torchvision torchaudio
