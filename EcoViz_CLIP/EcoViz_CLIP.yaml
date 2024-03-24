@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sergey-clip
+  labels:
+    app: sergey-clip
+spec:
+  containers:
+    - name: ecoviz-clip
+      image: segurvich/ecoviz-clip
+      imagePullPolicy: IfNotPresent
+      resources:
+        limits:
+          nvidia.com/gpu: 1
+  restartPolicy: Always
+  
