@@ -47,5 +47,10 @@ _Documentation: https://docs.nationalresearchplatform.org/userdocs/jupyter/jupyt
 ### 7. Access the Jupyter Hub link from the logs using your local browser
 http://127.0.0.1:8888/lab/tree/EcoViz_CLIP/EcoViz_CLIP_model.ipynb
 
-### 7. Tear down:
+### 8. If using minimal image, you'll need to:
+- `git clone https://github.com/Dr-Nathan-Fox/EcoViz_CLIP`
+
+- `pip install matplotlib pandas transformers torch torchvision torchaudio`
+
+### 9. Tear down:
 `kubectl delete -f  EcoViz_CLIP.yaml`
