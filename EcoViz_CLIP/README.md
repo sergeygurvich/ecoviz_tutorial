@@ -8,7 +8,10 @@
 ## Start building docker image locally:
 
 ### 1. Build the image using Dockerfile
-`docker build . -t segurvich/ecoviz_clip --platform=linux/amd64`
+- Empty image:
+`docker build . -f Dockerfile_minimal -t segurvich/ecoviz_clip --platform=linux/amd64`
+- Full image:
+`docker build . -f Dockerfile_full -t segurvich/ecoviz_clip --platform=linux/amd64`
 
 ### 2. Test the image locally:
 `docker run -d -p 8888:8888 segurvich/ecoviz_clip`
