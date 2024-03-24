@@ -16,9 +16,26 @@
 ### 3. Push the image to DockerHub (need to have account)
 `docker push segurvich/ecoviz_clip`
 
-## Now lets bring it to Nautilus:
+## Now lets bring everything to Nautilus:
 _Documentation: https://docs.nationalresearchplatform.org/userdocs/jupyter/jupyter-pod/_
 
+### 1. Create pod in Nautilus using EcoViz_CLIP.yaml:
+`kubectl create -f  EcoViz_CLIP.yaml`
 
-Port forwarding:
-`kubectl port-forward <pod> 8888:8888`
+### 2. List current pods and their status:
+`kubectl get pods`
+
+### 3. Describe our pod (get info):
+`kubectl describe pod sergey-clip`
+
+### 4. Once created, we can get logs:
+`kubectl logs sergey-clip`
+
+### 5. Once created, we can go inside the pod:
+`kubectl exec -it sergey-clip bash`
+
+### 6. Setup port forwarding to access Jupyter Lab from local browser:
+`kubectl port-forward sergey-clip 8888:8888`
+
+### 7. Tear down:
+`kubectl delete -f  EcoViz_CLIP.yaml`

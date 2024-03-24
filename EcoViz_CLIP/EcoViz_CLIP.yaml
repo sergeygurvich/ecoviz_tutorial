@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: ecoviz-clip
-      image: segurvich/ecoviz-clip
+      image: segurvich/ecoviz_clip:minimal
       imagePullPolicy: IfNotPresent
       resources:
         limits:
