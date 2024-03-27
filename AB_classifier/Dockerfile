@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 RUN pip install opensoundscape
 
 # Clone git repo
-# RUN git clone https://github.com/Dr-Nathan-Fox/EcoViz_CLIP
+# RUN git clone https://github.com/sergeygurvich/AB_classifier
 
 # Run JupyterLab when the container launches
 CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--no-browser"]
